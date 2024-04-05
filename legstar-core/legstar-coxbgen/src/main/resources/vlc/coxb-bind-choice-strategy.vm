@@ -7,13 +7,13 @@ Choice strategy class Velocity Template.
 ## Choice strategy code
 ##
 
-package ${helper.getPackageName(${choice-strategy-qualified-class-name}, ${coxbContext.getCoxbPackageName()})};
+package ${helper.getPackageName(${choiceStrategyQualifiedClassName}, ${coxbContext.getCoxbPackageName()})};
 import java.util.Hashtable;
 
 import com.legstar.coxb.CobolElementVisitor;
 import com.legstar.coxb.ICobolBinding;
 import com.legstar.coxb.ICobolChoiceBinding;
-import com.legstar.coxb.ICobol${choice-strategy-type}ChoiceStrategy;
+import com.legstar.coxb.ICobol${choiceStrategyType}ChoiceStrategy;
 import com.legstar.coxb.host.HostException;
 
 ## Determine the value Object type
@@ -24,7 +24,7 @@ import ${binding.getParentBinding().getValueObjectClassName()};
  * Skeleton implementation of a custom choice selection strategy. Modify this
  * code to select a suitable alternative.
  */
-public class ${helper.getClassName(${choice-strategy-qualified-class-name})} implements ICobol${choice-strategy-type}ChoiceStrategy {
+public class ${helper.getClassName(${choiceStrategyQualifiedClassName})} implements ICobol${choiceStrategyType}ChoiceStrategy {
 
     /** {@inheritDoc} */
     public ICobolBinding choose(

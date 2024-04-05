@@ -11,22 +11,22 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Location complex type.
+ * <p>Java class for Location complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Location">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Latitude" type="{http://www.w3.org/2001/XMLSchema}double"/>
- *         &lt;element name="Longitude" type="{http://www.w3.org/2001/XMLSchema}double"/>
- *         &lt;element name="Radius" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Location"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Latitude" type="{http://www.w3.org/2001/XMLSchema}double"/&gt;
+ *         &lt;element name="Longitude" type="{http://www.w3.org/2001/XMLSchema}double"/&gt;
+ *         &lt;element name="Radius" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -41,7 +41,7 @@ public class LocationType
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "Latitude")
     @CobolElement(cobolName = "Latitude", type = CobolType.DOUBLE_FLOAT_ITEM, levelNumber = 15, usage = "COMP-2")
     protected double latitude;

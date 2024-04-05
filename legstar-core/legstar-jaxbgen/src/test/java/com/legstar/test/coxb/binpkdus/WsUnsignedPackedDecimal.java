@@ -11,21 +11,21 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for WsUnsignedPackedDecimal complex type.
+ * <p>Java class for WsUnsignedPackedDecimal complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="WsUnsignedPackedDecimal">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="WsCompat" type="{http://legstar.com/test/coxb/binpkdus}WsCompat"/>
- *         &lt;element name="WsExtend" type="{http://legstar.com/test/coxb/binpkdus}WsExtend"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="WsUnsignedPackedDecimal"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="WsCompat" type="{http://legstar.com/test/coxb/binpkdus}WsCompat"/&gt;
+ *         &lt;element name="WsExtend" type="{http://legstar.com/test/coxb/binpkdus}WsExtend"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -39,7 +39,7 @@ public class WsUnsignedPackedDecimal
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "WsCompat", required = true)
     @CobolElement(cobolName = "WS-COMPAT", type = CobolType.GROUP_ITEM, levelNumber = 10, srceLine = 31)
     protected WsCompat wsCompat;

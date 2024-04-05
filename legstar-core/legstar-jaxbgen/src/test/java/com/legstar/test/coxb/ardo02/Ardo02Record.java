@@ -13,24 +13,24 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Ardo02Record complex type.
+ * <p>Java class for Ardo02Record complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Ardo02Record">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;choice>
- *           &lt;element name="AlternativeA" type="{http://legstar.com/test/coxb/ardo02}AlternativeA"/>
- *           &lt;element name="AlternativeB" type="{http://legstar.com/test/coxb/ardo02}AlternativeB"/>
- *         &lt;/choice>
- *         &lt;element name="OdoArray" type="{http://legstar.com/test/coxb/ardo02}OdoArray" maxOccurs="5" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Ardo02Record"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;choice&gt;
+ *           &lt;element name="AlternativeA" type="{http://legstar.com/test/coxb/ardo02}AlternativeA"/&gt;
+ *           &lt;element name="AlternativeB" type="{http://legstar.com/test/coxb/ardo02}AlternativeB"/&gt;
+ *         &lt;/choice&gt;
+ *         &lt;element name="OdoArray" type="{http://legstar.com/test/coxb/ardo02}OdoArray" maxOccurs="5" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -45,7 +45,7 @@ public class Ardo02Record
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "AlternativeA")
     @CobolElement(cobolName = "ALTERNATIVE-A", type = CobolType.GROUP_ITEM, levelNumber = 3, isRedefined = true, srceLine = 5)
     protected AlternativeA alternativeA;
@@ -115,24 +115,27 @@ public class Ardo02Record
     /**
      * Gets the value of the odoArray property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the odoArray property.
+     * This is why there is not a <CODE>set</CODE> method for the odoArray property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getOdoArray().add(newItem);
+     * getOdoArray().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link OdoArray }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the odoArray property.
      */
     public List<OdoArray> getOdoArray() {
         if (odoArray == null) {

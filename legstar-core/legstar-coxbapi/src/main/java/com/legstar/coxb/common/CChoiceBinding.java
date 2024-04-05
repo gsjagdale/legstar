@@ -196,7 +196,7 @@ public abstract class CChoiceBinding extends CBinding implements
     }
 
     /**
-     * This method is deprecated, it is replaced by {@link setPropertyValue}.
+     * This method is deprecated, it is replaced by {@link #setPropertyValue(int)}.
      * <p/>
      * {@inheritDoc}
      * 

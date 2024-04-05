@@ -8,32 +8,33 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlList;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import com.legstar.coxb.CobolElement;
 import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for SearchRequest complex type.
+ * <p>Java class for SearchRequest complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="SearchRequest">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="AppID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="Query" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="CultureInfo" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="SafeSearch" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}SafeSearchOptions"/>
- *         &lt;element name="Flags" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}SearchFlags"/>
- *         &lt;element name="Location" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}Location" minOccurs="0"/>
- *         &lt;element name="Requests" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}ArrayOfSourceRequestRequests"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="SearchRequest"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="AppID" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="Query" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="CultureInfo" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="SafeSearch" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}SafeSearchOptions"/&gt;
+ *         &lt;element name="Flags" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}SearchFlags"/&gt;
+ *         &lt;element name="Location" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}Location" minOccurs="0"/&gt;
+ *         &lt;element name="Requests" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}ArrayOfSourceRequestRequests"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -52,7 +53,7 @@ public class SearchRequestType
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "AppID", required = true)
     @CobolElement(cobolName = "AppID", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 5, picture = "X(40)", usage = "DISPLAY")
     protected String appID;
@@ -63,6 +64,7 @@ public class SearchRequestType
     @CobolElement(cobolName = "CultureInfo", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 5, picture = "X(32)", usage = "DISPLAY")
     protected String cultureInfo;
     @XmlElement(name = "SafeSearch", required = true, defaultValue = "Moderate")
+    @XmlSchemaType(name = "string")
     @CobolElement(cobolName = "SafeSearch", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 5, picture = "X(32)", usage = "DISPLAY")
     protected SafeSearchOptionsType safeSearch;
     @XmlList
@@ -191,24 +193,27 @@ public class SearchRequestType
     /**
      * Gets the value of the flags property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the flags property.
+     * This is why there is not a <CODE>set</CODE> method for the flags property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getFlags().add(newItem);
+     * getFlags().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link String }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the flags property.
      */
     public List<String> getFlags() {
         if (flags == null) {

@@ -11,35 +11,35 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Dfhcommarea complex type.
+ * <p>Java class for Dfhcommarea complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Dfhcommarea">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;choice>
- *           &lt;element name="CDefinition1">
- *             &lt;simpleType>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                 &lt;maxLength value="18"/>
- *               &lt;/restriction>
- *             &lt;/simpleType>
- *           &lt;/element>
- *           &lt;element name="CDefinition2">
- *             &lt;simpleType>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedLong">
- *                 &lt;maxInclusive value="999999999999999999"/>
- *               &lt;/restriction>
- *             &lt;/simpleType>
- *           &lt;/element>
- *         &lt;/choice>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Dfhcommarea"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;choice&gt;
+ *           &lt;element name="CDefinition1"&gt;
+ *             &lt;simpleType&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *                 &lt;maxLength value="18"/&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/simpleType&gt;
+ *           &lt;/element&gt;
+ *           &lt;element name="CDefinition2"&gt;
+ *             &lt;simpleType&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedLong"&gt;
+ *                 &lt;maxInclusive value="999999999999999999"/&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/simpleType&gt;
+ *           &lt;/element&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -53,7 +53,7 @@ public class Dfhcommarea
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "CDefinition1")
     @CobolElement(cobolName = "C-DEFINITION-1", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 5, isRedefined = true, picture = "X(18)", unmarshalChoiceStrategyClassName = "com.legstar.coxb.cust.redsimpt.ChoiceSelector", srceLine = 21)
     protected String cDefinition1;

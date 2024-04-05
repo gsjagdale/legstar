@@ -354,17 +354,21 @@ public class CoxbBindingGenerator extends Task {
     }
 
     /**
-     * @deprecated Use <code>getJaxbBinDir</code> instead
+     * @deprecated
+     * Use {@link #getJaxbBinDir()} instead
      * @return the location where JAXB classes live
      */
+    @Deprecated
     public File getJaxbDir() {
         return _coxbGenModel.getJaxbBinDir();
     }
 
     /**
-     * @deprecated Use <code>setJaxbBinDir</code> instead
+     * @deprecated
+     * Use {@link #setJaxbBinDir(File)} instead
      * @param jaxbDir the JAXB location to set
      */
+    @Deprecated
     public void setJaxbDir(final File jaxbDir) {
         _coxbGenModel.setJaxbBinDir(jaxbDir);
     }

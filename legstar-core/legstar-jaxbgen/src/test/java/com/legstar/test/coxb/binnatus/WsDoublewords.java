@@ -12,47 +12,47 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for WsDoublewords complex type.
+ * <p>Java class for WsDoublewords complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="WsDoublewords">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="WsP9X18Min">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedLong">
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="WsP9X18Low">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedLong">
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;choice>
- *           &lt;element name="WsP9X18HighB" type="{http://legstar.com/test/coxb/binnatus}WsP9X18HighB"/>
- *           &lt;element name="WsP9X18High">
- *             &lt;simpleType>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedLong">
- *               &lt;/restriction>
- *             &lt;/simpleType>
- *           &lt;/element>
- *         &lt;/choice>
- *         &lt;element name="WsP9X18MaxB" type="{http://legstar.com/test/coxb/binnatus}WsP9X18MaxB"/>
- *         &lt;element name="WsP9X18Max">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedLong">
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="WsDoublewords"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="WsP9X18Min"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedLong"&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="WsP9X18Low"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedLong"&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;choice&gt;
+ *           &lt;element name="WsP9X18HighB" type="{http://legstar.com/test/coxb/binnatus}WsP9X18HighB"/&gt;
+ *           &lt;element name="WsP9X18High"&gt;
+ *             &lt;simpleType&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedLong"&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/simpleType&gt;
+ *           &lt;/element&gt;
+ *         &lt;/choice&gt;
+ *         &lt;element name="WsP9X18MaxB" type="{http://legstar.com/test/coxb/binnatus}WsP9X18MaxB"/&gt;
+ *         &lt;element name="WsP9X18Max"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedLong"&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -70,7 +70,7 @@ public class WsDoublewords
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "WsP9X18Min", required = true)
     @CobolElement(cobolName = "WS-P9X18-MIN", type = CobolType.NATIVE_BINARY_ITEM, levelNumber = 15, isSigned = false, totalDigits = 18, picture = "9(18)", usage = "COMP-5", value = "0", srceLine = 42)
     protected BigInteger wsP9X18Min = (new BigInteger("0"));

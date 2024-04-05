@@ -11,35 +11,35 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for TableRedef complex type.
+ * <p>Java class for TableRedef complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="TableRedef">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;choice>
- *           &lt;element name="ElementRedef1">
- *             &lt;simpleType>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                 &lt;maxLength value="3"/>
- *               &lt;/restriction>
- *             &lt;/simpleType>
- *           &lt;/element>
- *           &lt;element name="ElementRedef2">
- *             &lt;simpleType>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort">
- *                 &lt;totalDigits value="3"/>
- *               &lt;/restriction>
- *             &lt;/simpleType>
- *           &lt;/element>
- *         &lt;/choice>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="TableRedef"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;choice&gt;
+ *           &lt;element name="ElementRedef1"&gt;
+ *             &lt;simpleType&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *                 &lt;maxLength value="3"/&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/simpleType&gt;
+ *           &lt;/element&gt;
+ *           &lt;element name="ElementRedef2"&gt;
+ *             &lt;simpleType&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort"&gt;
+ *                 &lt;totalDigits value="3"/&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/simpleType&gt;
+ *           &lt;/element&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -53,7 +53,7 @@ public class TableRedef
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "ElementRedef1")
     @CobolElement(cobolName = "ELEMENT-REDEF-1", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 10, isRedefined = true, picture = "X(3)", unmarshalChoiceStrategyClassName = "com.legstar.coxb.cust.arrayscx.ChoiceSelector", srceLine = 34)
     protected String elementRedef1;

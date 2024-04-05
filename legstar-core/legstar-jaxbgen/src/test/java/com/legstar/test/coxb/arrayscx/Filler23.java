@@ -13,26 +13,26 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Filler23 complex type.
+ * <p>Java class for Filler23 complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Filler23">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="WsItemA" maxOccurs="3" minOccurs="3">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort">
- *               &lt;totalDigits value="1"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Filler23"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="WsItemA" maxOccurs="3" minOccurs="3"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort"&gt;
+ *               &lt;totalDigits value="1"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -45,7 +45,7 @@ public class Filler23
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "WsItemA", type = Integer.class)
     @CobolElement(cobolName = "WS-ITEM-A", type = CobolType.ZONED_DECIMAL_ITEM, levelNumber = 5, isSigned = false, totalDigits = 1, minOccurs = 3, maxOccurs = 3, picture = "9", srceLine = 24)
     protected List<Integer> wsItemA;
@@ -53,24 +53,27 @@ public class Filler23
     /**
      * Gets the value of the wsItemA property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the wsItemA property.
+     * This is why there is not a <CODE>set</CODE> method for the wsItemA property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getWsItemA().add(newItem);
+     * getWsItemA().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Integer }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the wsItemA property.
      */
     public List<Integer> getWsItemA() {
         if (wsItemA == null) {

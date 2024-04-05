@@ -36,9 +36,9 @@ public class CobolJAXBGeneratorTest extends AbstractJaxbGenTest {
 
     /** List of XSDs which need special generation parameters. */
     private static final List < String > NON_STANDARD_XSDS = Arrays
-            .asList(new String[] { "enumvar.xsd", "MSNSearch.xsd",
+            .asList("enumvar.xsd", "MSNSearch.xsd",
                     "jvmquery.xsd", "jvmquery-ws.xsd", "cultureinfo.xsd",
-                    "RQ071CICSECIBinding.xsd" });
+                    "RQ071CICSECIBinding.xsd" );
 
     /** {@inheritDoc} */
     @Override
@@ -133,13 +133,13 @@ public class CobolJAXBGeneratorTest extends AbstractJaxbGenTest {
         jaxbgen("LSFILEAQ.xsd", "lsfileaq", internalBindings, 1L, true, null,
                 null, null, null, false, false);
         assertTrue(getJaxbSource("lsfileaq", "Dfhcommarea").contains(
-                "private final static long serialVersionUID = 1L;"));
+                "private static final long serialVersionUID = 1L;"));
 
         jaxbgen("LSFILEAQ.xsd", "lsfileaq", internalBindings,
                 123589357872112454L, true, null, null, null, null, false, false);
         assertTrue(getJaxbSource("lsfileaq", "Dfhcommarea")
                 .contains(
-                        "private final static long serialVersionUID = 123589357872112454L;"));
+                        "private static final long serialVersionUID = 123589357872112454L;"));
     }
 
     /**
@@ -298,8 +298,8 @@ public class CobolJAXBGeneratorTest extends AbstractJaxbGenTest {
      * Level 88 case.
      */
     public void testRQ074() throws Exception {
-        jaxbgen("rq074", new File(COB_XSD_DIR, "rq074.xsd"), true, 1L, true,
-                null, null, null, null, false, false);
+        jaxbgen("rq074", new File(COB_XSD_DIR, "rq074.xsd"),
+                true, 1L, true, null, null, null, null, false, false);
         check("rq074");
     }
 

@@ -4,17 +4,14 @@
  * are made available under the terms of the GNU Lesser Public License v2.1
  * which accompanies this distribution, and is available at
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
- * 
+ *
  * Contributors:
  *     LegSem - initial API and implementation
  ******************************************************************************/
 package com.legstar.coxb.gen;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
-import java.util.Vector;
+import java.util.*;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;
@@ -27,7 +24,7 @@ import com.legstar.jaxb.gen.JaxbGenModel;
 
 /**
  * Test the generation model.
- * 
+ *
  */
 public class CoxbGenModelTest extends AbstractCoxbGenTest {
 
@@ -46,7 +43,7 @@ public class CoxbGenModelTest extends AbstractCoxbGenTest {
     /**
      * Generate an ant script capable of producing the binding artifacts using
      * the VLC template. Submit the script and check results.
-     * 
+     *
      * @throws Exception if ant cannot be generated
      */
     public void testBuildCoxb() throws Exception {
@@ -79,7 +76,7 @@ public class CoxbGenModelTest extends AbstractCoxbGenTest {
 
     /**
      * Test the COXB customization parameters.
-     * 
+     *
      * @throws Exception if ant cannot be generated
      */
     public void testCOXBCustomization() throws Exception {
@@ -111,7 +108,7 @@ public class CoxbGenModelTest extends AbstractCoxbGenTest {
 
     /**
      * Test the JAXB customization parameters.
-     * 
+     *
      * @throws Exception if ant cannot be generated
      */
     public void testJAXBCustomization() throws Exception {
@@ -135,7 +132,7 @@ public class CoxbGenModelTest extends AbstractCoxbGenTest {
 
     /**
      * Test the choice strategy parameters.
-     * 
+     *
      * @throws Exception if ant cannot be generated
      */
     public void testChoiceStrategyParameter() throws Exception {
@@ -158,7 +155,7 @@ public class CoxbGenModelTest extends AbstractCoxbGenTest {
 
     /**
      * Generate and submit the ant script with choice strategy parameter.
-     * 
+     *
      * @throws Exception if ant cannot be generated
      */
     public void testBuildCoxbWithStrategy() throws Exception {
@@ -195,7 +192,7 @@ public class CoxbGenModelTest extends AbstractCoxbGenTest {
 
     /**
      * Test the serialization and construction using a properties file.
-     * 
+     *
      * @throws Exception if test fails
      */
     public void testPropertySerialization() throws Exception {
@@ -226,11 +223,20 @@ public class CoxbGenModelTest extends AbstractCoxbGenTest {
         assertEquals(null,
                 props.get(CoxbGenModel.COXB_UNMARSHAL_CHOICE_STRATEGIES));
 
-        assertEquals("{isCompileTransformers=false,"
-                + " isXmlTransformers=true," + " serializableID=1,"
-                + " internalBindings=true," + " eciCompatible=false,"
-                + " isJsonTransformers=false," + " noPackageInfo=false,"
-                + " generateIsSetMethod=true}", model.toString());
+        Properties verifyProp = new Properties();
+        verifyProp.put("isCompileTransformers", false);
+        verifyProp.put("isXmlTransformers", true);
+        verifyProp.put("serializableID", 1);
+        verifyProp.put("internalBindings", true);
+        verifyProp.put("eciCompatible", false);
+        verifyProp.put("isJsonTransformers", false);
+        verifyProp.put("noPackageInfo", false);
+        verifyProp.put("generateIsSetMethod", true);
+
+        for (Map.Entry<Object, Object> entry: verifyProp.entrySet()){
+            assertTrue(model.toProperties().containsKey(entry.getKey()));
+            assertEquals(entry.getValue().toString(), model.toProperties().get(entry.getKey()).toString());
+        }
 
         model = new CoxbGenModel(props);
         assertEquals(null, model.getJaxbPackageName());
@@ -346,7 +352,7 @@ public class CoxbGenModelTest extends AbstractCoxbGenTest {
 
     /**
      * Execute an ant script.
-     * 
+     *
      * @param buildFile the ant script
      * @throws Exception if ant script execution fails
      */
@@ -365,7 +371,7 @@ public class CoxbGenModelTest extends AbstractCoxbGenTest {
 
     /**
      * Generates an ant script from a VLC template.
-     * 
+     *
      * @return the script as a string
      * @throws Exception if generation fails
      */
@@ -377,7 +383,7 @@ public class CoxbGenModelTest extends AbstractCoxbGenTest {
 
     /**
      * Generates an ant script from a VLC template.
-     * 
+     *
      * @return the script as a string
      * @throws Exception if generation fails
      */
@@ -388,7 +394,7 @@ public class CoxbGenModelTest extends AbstractCoxbGenTest {
 
     /**
      * Test package to includes.
-     * 
+     *
      * @throws Exception if generation fails
      */
     public void testToIncludes() throws Exception {

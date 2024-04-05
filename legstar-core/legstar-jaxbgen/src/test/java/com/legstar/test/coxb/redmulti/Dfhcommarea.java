@@ -11,37 +11,37 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Dfhcommarea complex type.
+ * <p>Java class for Dfhcommarea complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Dfhcommarea">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="COutputType">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="6"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;choice>
- *           &lt;element name="CData">
- *             &lt;simpleType>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *                 &lt;maxLength value="200"/>
- *               &lt;/restriction>
- *             &lt;/simpleType>
- *           &lt;/element>
- *           &lt;element name="Filler35" type="{http://legstar.com/test/coxb/redmulti}Filler35"/>
- *           &lt;element name="Filler38" type="{http://legstar.com/test/coxb/redmulti}Filler38"/>
- *         &lt;/choice>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Dfhcommarea"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="COutputType"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="6"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;choice&gt;
+ *           &lt;element name="CData"&gt;
+ *             &lt;simpleType&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *                 &lt;maxLength value="200"/&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/simpleType&gt;
+ *           &lt;/element&gt;
+ *           &lt;element name="Filler35" type="{http://legstar.com/test/coxb/redmulti}Filler35"/&gt;
+ *           &lt;element name="Filler38" type="{http://legstar.com/test/coxb/redmulti}Filler38"/&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -57,7 +57,7 @@ public class Dfhcommarea
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "COutputType", required = true)
     @CobolElement(cobolName = "C-OUTPUT-TYPE", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 5, picture = "X(6)", srceLine = 31)
     protected String cOutputType;

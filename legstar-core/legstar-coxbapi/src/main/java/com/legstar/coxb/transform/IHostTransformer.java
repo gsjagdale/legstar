@@ -71,9 +71,9 @@ public interface IHostTransformer {
      *         Such a binding can either be statically produced by
      *         {@link com.legstar.coxb.gen.CoxbBindingGenerator},
      *         or dynamically built by
-     *         {@link com.legstar.coxb.impl.reflect.CComplexBinding}.
+     *         {@link com.legstar.coxb.common.CComplexBinding}.
      * @throws CobolBindingException if binding cannot be returned
-     * @deprecated replaced by {@link newBinding}
+     * @deprecated replaced by {@link #newBinding()}
      */
     ICobolComplexBinding getBinding() throws CobolBindingException;
 
@@ -82,7 +82,7 @@ public interface IHostTransformer {
      *         Such a binding can either be statically produced by
      *         {@link com.legstar.coxb.gen.CoxbBindingGenerator},
      *         or dynamically built by
-     *         {@link com.legstar.coxb.impl.reflect.CComplexBinding}.
+     *         {@link com.legstar.coxb.common.CComplexBinding}.
      * @throws CobolBindingException if binding cannot be returned
      */
     ICobolComplexBinding newBinding() throws CobolBindingException;

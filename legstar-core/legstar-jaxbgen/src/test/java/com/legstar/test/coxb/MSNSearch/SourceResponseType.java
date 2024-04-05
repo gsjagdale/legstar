@@ -5,30 +5,31 @@ import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import com.legstar.coxb.CobolElement;
 import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for SourceResponse complex type.
+ * <p>Java class for SourceResponse complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="SourceResponse">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Source" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}SourceType"/>
- *         &lt;element name="Offset" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="Total" type="{http://www.w3.org/2001/XMLSchema}int"/>
- *         &lt;element name="RecourseQuery" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Results" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}ArrayOfResultResults"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="SourceResponse"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Source" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}SourceType"/&gt;
+ *         &lt;element name="Offset" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="Total" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="RecourseQuery" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Results" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}ArrayOfResultResults"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -45,8 +46,9 @@ public class SourceResponseType
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "Source", required = true)
+    @XmlSchemaType(name = "string")
     @CobolElement(cobolName = "R-Source", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 9, picture = "X(32)", usage = "DISPLAY")
     protected SourceTypeType source;
     @XmlElement(name = "Offset")

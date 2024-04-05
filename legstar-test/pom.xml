@@ -5,11 +5,13 @@
         <groupId>org.sonatype.oss</groupId>
         <artifactId>oss-parent</artifactId>
         <version>5</version>
+        <relativePath />
     </parent>
 
     <groupId>com.legsem.legstar</groupId>
     <artifactId>legstar-test</artifactId>
     <version>0.2.3-SNAPSHOT</version>
+
     <packaging>pom</packaging>
     
     <name>LegStar test samples</name>
@@ -19,9 +21,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <antInternalVersion>1.7.0</antInternalVersion> <!-- Used for legstar builds and tests -->
+        <antInternalVersion>1.10.14</antInternalVersion> <!-- Used for legstar builds and tests -->
         <antVersion>1.6.5</antVersion>  <!-- Expected to be provided at runtime -->
-        <jaxwsVersion>2.1.4</jaxwsVersion>
+        <jaxwsVersion>4.0.2</jaxwsVersion>
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
         <buildDate>${maven.build.timestamp}</buildDate>
     </properties>
@@ -133,8 +135,8 @@
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <configuration>
-                        <source>1.5</source>
-                        <target>1.5</target>
+                        <source>11</source>
+                        <target>11</target>
                         <encoding>UTF-8</encoding>
                     </configuration>
                 </plugin>
@@ -142,7 +144,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-antrun-plugin</artifactId>
-                    <version>1.1</version>
+                    <version>3.1.0</version>
                     <dependencies>
                         <dependency>
                             <groupId>org.apache.ant</groupId>
@@ -153,6 +155,12 @@
                             <groupId>ant-contrib</groupId>
                             <artifactId>ant-contrib</artifactId>
                             <version>1.0b3</version>
+                            <exclusions>
+                                <exclusion>
+                                    <groupId>ant</groupId>
+                                    <artifactId>ant</artifactId>
+                                </exclusion>
+                            </exclusions>
                         </dependency>
                         <dependency>
                             <groupId>commons-net</groupId>
@@ -164,11 +172,11 @@
                             <artifactId>ant-commons-net</artifactId>
                             <version>${antInternalVersion}</version>
                         </dependency>
-                        <dependency>
+                        <!--<dependency>
                             <groupId>org.apache.ant</groupId>
                             <artifactId>ant-nodeps</artifactId>
                             <version>${antInternalVersion}</version>
-                        </dependency>
+                        </dependency>-->
                     </dependencies>
     
                 </plugin>
@@ -176,7 +184,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId> 
                     <artifactId>maven-javadoc-plugin</artifactId> 
-                    <version>2.7</version> 
+                    <version>3.3.0</version>
                 </plugin>
 
                 <plugin>
@@ -194,6 +202,7 @@
             <!-- Produce source jar for each module -->
             <plugin>
                 <artifactId>maven-source-plugin</artifactId>
+                <version>3.3.0</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -215,12 +224,6 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration>
-                    <links>
-                        <link>http://download.oracle.com/javaee/1.5/api/</link>
-                        <link>http://download.oracle.com/javase/1.5.0/docs/api/</link>
-                    </links>
-                </configuration>
             </plugin>
 
         </plugins>
@@ -274,7 +277,7 @@
             <dependency>
                 <groupId>commons-logging</groupId>
                 <artifactId>commons-logging</artifactId>
-                <version>1.1</version>
+                <version>1.3.1</version>
                 <exclusions>
                     <exclusion>
                         <groupId>logkit</groupId>
@@ -295,14 +298,14 @@
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
-                <version>1.4</version>
+                <version>2.15.1</version>
             </dependency>
     
             <!-- Apache commons client -->    
             <dependency>
                 <groupId>commons-cli</groupId>
                 <artifactId>commons-cli</artifactId>
-                <version>1.1</version>
+                <version>1.6.0</version>
             </dependency>
     
             <!-- Sun JAXB JAX-WS runtime -->    

@@ -13,50 +13,50 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Payload complex type.
+ * <p>Java class for Payload complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Payload">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="WechRequestRows">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort">
- *               &lt;totalDigits value="3"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="WechDynamicResponseRows">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort">
- *               &lt;totalDigits value="3"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="WechErrorRows">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort">
- *               &lt;totalDigits value="3"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="WechAdditionalPageKeys">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="1"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="IStaticData" type="{http://legstar.com/test/coxb/varar021}IStaticData" minOccurs="0"/>
- *         &lt;element name="ODynamicData" type="{http://legstar.com/test/coxb/varar021}ODynamicData" maxOccurs="363" minOccurs="0"/>
- *         &lt;element name="WellpointEaiEbsErrorRow" type="{http://legstar.com/test/coxb/varar021}WellpointEaiEbsErrorRow" maxOccurs="99" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Payload"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="WechRequestRows"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort"&gt;
+ *               &lt;totalDigits value="3"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="WechDynamicResponseRows"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort"&gt;
+ *               &lt;totalDigits value="3"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="WechErrorRows"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort"&gt;
+ *               &lt;totalDigits value="3"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="WechAdditionalPageKeys"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="1"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="IStaticData" type="{http://legstar.com/test/coxb/varar021}IStaticData" minOccurs="0"/&gt;
+ *         &lt;element name="ODynamicData" type="{http://legstar.com/test/coxb/varar021}ODynamicData" maxOccurs="363" minOccurs="0"/&gt;
+ *         &lt;element name="WellpointEaiEbsErrorRow" type="{http://legstar.com/test/coxb/varar021}WellpointEaiEbsErrorRow" maxOccurs="99" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -75,7 +75,7 @@ public class Payload
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "WechRequestRows")
     @CobolElement(cobolName = "WECH-REQUEST-ROWS", type = CobolType.ZONED_DECIMAL_ITEM, levelNumber = 5, isSigned = false, totalDigits = 3, isODOObject = true, picture = "9(3)", srceLine = 33)
     protected int wechRequestRows;
@@ -217,24 +217,27 @@ public class Payload
     /**
      * Gets the value of the oDynamicData property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the oDynamicData property.
+     * This is why there is not a <CODE>set</CODE> method for the oDynamicData property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getODynamicData().add(newItem);
+     * getODynamicData().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link ODynamicData }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the oDynamicData property.
      */
     public List<ODynamicData> getODynamicData() {
         if (oDynamicData == null) {
@@ -254,24 +257,27 @@ public class Payload
     /**
      * Gets the value of the wellpointEaiEbsErrorRow property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the wellpointEaiEbsErrorRow property.
+     * This is why there is not a <CODE>set</CODE> method for the wellpointEaiEbsErrorRow property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getWellpointEaiEbsErrorRow().add(newItem);
+     * getWellpointEaiEbsErrorRow().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link WellpointEaiEbsErrorRow }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the wellpointEaiEbsErrorRow property.
      */
     public List<WellpointEaiEbsErrorRow> getWellpointEaiEbsErrorRow() {
         if (wellpointEaiEbsErrorRow == null) {

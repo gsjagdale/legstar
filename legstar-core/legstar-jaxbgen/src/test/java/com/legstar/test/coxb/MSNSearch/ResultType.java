@@ -11,35 +11,35 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Result complex type.
+ * <p>Java class for Result complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Result">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Title" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Url" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="DisplayUrl" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="CacheUrl" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Source" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="SearchTags" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Phone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="DateTime" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}DateTime" minOccurs="0"/>
- *         &lt;element name="Address" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}Address" minOccurs="0"/>
- *         &lt;element name="Location" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}Location" minOccurs="0"/>
- *         &lt;element name="SearchTagsArray" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}ArrayOfSearchTagSearchTagsArray" minOccurs="0"/>
- *         &lt;element name="Summary" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="ResultType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="Image" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}Image" minOccurs="0"/>
- *         &lt;element name="Video" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}Video" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Result"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Title" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Description" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Url" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="DisplayUrl" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="CacheUrl" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Source" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="SearchTags" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Phone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="DateTime" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}DateTime" minOccurs="0"/&gt;
+ *         &lt;element name="Address" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}Address" minOccurs="0"/&gt;
+ *         &lt;element name="Location" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}Location" minOccurs="0"/&gt;
+ *         &lt;element name="SearchTagsArray" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}ArrayOfSearchTagSearchTagsArray" minOccurs="0"/&gt;
+ *         &lt;element name="Summary" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="ResultType" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="Image" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}Image" minOccurs="0"/&gt;
+ *         &lt;element name="Video" type="{http://schemas.microsoft.com/MSNSearch/2005/09/fex}Video" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -67,7 +67,7 @@ public class ResultType
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "Title")
     @CobolElement(cobolName = "R-Title", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 13, picture = "X(32)", usage = "DISPLAY")
     protected String title;

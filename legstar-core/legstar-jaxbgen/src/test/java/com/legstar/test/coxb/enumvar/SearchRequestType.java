@@ -6,28 +6,29 @@ import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import com.legstar.coxb.CobolElement;
 import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for SearchRequest complex type.
+ * <p>Java class for SearchRequest complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="SearchRequest">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="AppID" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="SafeSearch" type="{http://legstar.com/test/coxb/enumvar}SafeSearchOptions"/>
- *         &lt;element name="SearchWeight" type="{http://legstar.com/test/coxb/enumvar}SearchWeightOptions"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="SearchRequest"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="AppID" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="SafeSearch" type="{http://legstar.com/test/coxb/enumvar}SafeSearchOptions"/&gt;
+ *         &lt;element name="SearchWeight" type="{http://legstar.com/test/coxb/enumvar}SearchWeightOptions"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -42,11 +43,12 @@ public class SearchRequestType
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "AppID", required = true)
     @CobolElement(cobolName = "APPID", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 5, picture = "X(40)", usage = "DISPLAY")
     protected String appID;
     @XmlElement(name = "SafeSearch", required = true, defaultValue = "Moderate")
+    @XmlSchemaType(name = "string")
     @CobolElement(cobolName = "SAFESEARCH", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 5, picture = "X(32)", usage = "DISPLAY")
     protected SafeSearchOptionsType safeSearch;
     @XmlElement(name = "SearchWeight", required = true, defaultValue = "2")

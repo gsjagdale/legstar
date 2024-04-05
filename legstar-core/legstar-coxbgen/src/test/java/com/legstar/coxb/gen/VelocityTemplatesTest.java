@@ -118,8 +118,8 @@ public class VelocityTemplatesTest extends AbstractCoxbGenTest {
         ICobolComplexBinding ce = getComplexBinding("redsimpt", "Dfhcommarea");
         ICobolChoiceBinding cc = (ICobolChoiceBinding) ce.getChildrenList()
                 .get(0);
-        getParameters().put("choice-strategy-type", "Unmarshal");
-        getParameters().put("choice-strategy-qualified-class-name",
+        getParameters().put("choiceStrategyType", "Unmarshal");
+        getParameters().put("choiceStrategyQualifiedClassName",
                 "com.legstar.coxb.cust.redsimpt.ChoiceSelector");
         File resultFolder = new File(GEN_SRC_DIR,
                 "com/legstar/coxb/cust/redsimpt");
@@ -407,7 +407,7 @@ public class VelocityTemplatesTest extends AbstractCoxbGenTest {
             throws Exception {
 
         getParameters().put("coxbContext", coxbContext);
-        getParameters().put("binding-class-name", rootName + "Binding");
+        getParameters().put("bindingClassName", rootName + "Binding");
 
         FileUtils.forceMkdir(targetFolder);
         CodeGenUtil.processTemplate(BINDING_GENERATOR_NAME, templateName,

@@ -13,27 +13,27 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for OdoArray complex type.
+ * <p>Java class for OdoArray complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="OdoArray">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="OdoSubCounter">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort">
- *               &lt;totalDigits value="3"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="OdoSubArray" type="{http://legstar.com/test/coxb/ardo03}OdoSubArray" maxOccurs="5" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="OdoArray"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="OdoSubCounter"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort"&gt;
+ *               &lt;totalDigits value="3"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="OdoSubArray" type="{http://legstar.com/test/coxb/ardo03}OdoSubArray" maxOccurs="5" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -47,7 +47,7 @@ public class OdoArray
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "OdoSubCounter")
     @CobolElement(cobolName = "ODO-SUB-COUNTER", type = CobolType.ZONED_DECIMAL_ITEM, levelNumber = 10, isSigned = false, totalDigits = 3, isODOObject = true, picture = "9(3)", srceLine = 5)
     protected int odoSubCounter;
@@ -78,24 +78,27 @@ public class OdoArray
     /**
      * Gets the value of the odoSubArray property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the odoSubArray property.
+     * This is why there is not a <CODE>set</CODE> method for the odoSubArray property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getOdoSubArray().add(newItem);
+     * getOdoSubArray().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link OdoSubArray }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the odoSubArray property.
      */
     public List<OdoSubArray> getOdoSubArray() {
         if (odoSubArray == null) {

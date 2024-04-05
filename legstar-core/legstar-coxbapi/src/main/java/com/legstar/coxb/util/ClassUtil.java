@@ -295,8 +295,7 @@ public final class ClassUtil {
      * @param jaxbName the property name to get
      * @return instance of the property as returned from a getter method
      * @throws ClassInvokeException if property cannot be accessed
-     * @deprecated use {@link invokeGetProperty(Object parentObject, String
-     *             jaxbName, Class < ? > jaxbType)}
+     * @deprecated use {@link #invokeGetProperty(Object, String, Class, int)}
      */
     public static Object invokeGetProperty(final Object parentObject,
             final String jaxbName) throws ClassInvokeException {

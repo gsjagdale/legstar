@@ -13,13 +13,13 @@ package com.legstar.coxb.transform;
 import java.io.IOException;
 import java.io.Writer;
 
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.AnnotationIntrospector;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.codehaus.jackson.JsonGenerationException;
-import org.codehaus.jackson.map.AnnotationIntrospector;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.codehaus.jackson.map.ObjectMapper;
-import org.codehaus.jackson.xc.JaxbAnnotationIntrospector;
 
 /**
  * Generic methods to transform host data to JSON.
@@ -49,9 +49,7 @@ public abstract class AbstractHostToJsonTransformer implements
         _hostToJavaTransformer = hostToJavaTransformer;
         _jsonMapper = new ObjectMapper();
         AnnotationIntrospector introspector = new JaxbAnnotationIntrospector();
-        _jsonMapper.getDeserializationConfig().setAnnotationIntrospector(
-                    introspector);
-        _jsonMapper.getSerializationConfig().setAnnotationIntrospector(
+        _jsonMapper.setAnnotationIntrospector(
                     introspector);
     }
 

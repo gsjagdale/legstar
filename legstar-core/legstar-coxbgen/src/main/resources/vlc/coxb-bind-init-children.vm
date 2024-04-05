@@ -10,23 +10,23 @@ Initializes children Velocity Template.
 #if($coxbHelper.getGenericType($child).equals("simple") || $coxbHelper.getGenericType($child).equals("enum"))
         $coxbHelper.getFieldName($child) = BF.create${coxbHelper.getCreateMethod($child)}("${child.bindingName}",
 #if($child.isBound())
-               "$child.jaxbName", ${coxbHelper.getBoundTypeName($child)}.class, ${parent-binding});
+               "$child.jaxbName", ${coxbHelper.getBoundTypeName($child)}.class, $parentBinding);
 #else
-               ${parent-binding});
+               $parentBinding);
 #end
 #end
 #if($coxbHelper.getGenericType($child).equals("choice"))
-        $coxbHelper.getFieldName($child) = new ${coxbHelper.getCoxbTypeName($child)}("${child.bindingName}", ${parent-binding});
+        $coxbHelper.getFieldName($child) = new ${coxbHelper.getCoxbTypeName($child)}("${child.bindingName}", $parentBinding);
 #end
 #if($coxbHelper.getGenericType($child).equals("complex"))
         $coxbHelper.getFieldName($child) = new ${coxbHelper.getCoxbTypeName($child)}("${child.bindingName}",
-               "$child.jaxbName", ${parent-binding}, null);
+               "$child.jaxbName", $parentBinding, null);
 #end
 #if($coxbHelper.getGenericType($child).equals("complexArray"))
         ${coxbHelper.getFieldName($child)}Item = new ${coxbHelper.getItemCoxbTypeName($child)}("${child.bindingName}Item",
-               "$child.jaxbName", ${parent-binding}, null);
+               "$child.jaxbName", $parentBinding, null);
         $coxbHelper.getFieldName($child) = new ${coxbHelper.getCoxbTypeName($child)}("${child.bindingName}",
-               "$child.jaxbName", ${parent-binding}, ${coxbHelper.getFieldName($child)}Item);
+               "$child.jaxbName", $parentBinding, ${coxbHelper.getFieldName($child)}Item);
 #end
 #if(${helper.isEmpty("${child.getCobolName()}")} == false)
         ${coxbHelper.getFieldName($child)}.setCobolName("${child.getCobolName()}");

@@ -51,8 +51,8 @@ public final class JvmqueryCases extends TestCase {
         jvmQueryReply.setCurrencySymbol("€");
         jvmQueryReply.setFormattedDate("vendredi-10-octobre-2008-14h-28");
         jvmQueryReply.setLanguage("français");
-        jvmQueryReply.getEnvVarValues().add(System.getenv("JAVA_HOME"));
-        jvmQueryReply.getEnvVarValues().add(System.getenv("LEGSTAR_HOME"));
+        jvmQueryReply.getEnvVarValues().add("JAVA_HOME");
+        jvmQueryReply.getEnvVarValues().add("LEGSTAR_HOME");
         return jvmQueryReply;
     }
 

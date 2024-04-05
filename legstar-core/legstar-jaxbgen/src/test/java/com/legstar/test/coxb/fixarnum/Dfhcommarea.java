@@ -15,57 +15,57 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Dfhcommarea complex type.
+ * <p>Java class for Dfhcommarea complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Dfhcommarea">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="CArrayPd" maxOccurs="3" minOccurs="3">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;totalDigits value="7"/>
- *               &lt;fractionDigits value="2"/>
- *               &lt;minInclusive value="0"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="CArrayZd" maxOccurs="3" minOccurs="3">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;totalDigits value="6"/>
- *               &lt;fractionDigits value="3"/>
- *               &lt;minInclusive value="0"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="CArrayZi" maxOccurs="3" minOccurs="3">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort">
- *               &lt;totalDigits value="4"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="CArrayBi" maxOccurs="3" minOccurs="3">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedInt">
- *               &lt;totalDigits value="9"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="CArrayNi" maxOccurs="3" minOccurs="3">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedLong">
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Dfhcommarea"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="CArrayPd" maxOccurs="3" minOccurs="3"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;totalDigits value="7"/&gt;
+ *               &lt;fractionDigits value="2"/&gt;
+ *               &lt;minInclusive value="0"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="CArrayZd" maxOccurs="3" minOccurs="3"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;totalDigits value="6"/&gt;
+ *               &lt;fractionDigits value="3"/&gt;
+ *               &lt;minInclusive value="0"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="CArrayZi" maxOccurs="3" minOccurs="3"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort"&gt;
+ *               &lt;totalDigits value="4"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="CArrayBi" maxOccurs="3" minOccurs="3"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedInt"&gt;
+ *               &lt;totalDigits value="9"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="CArrayNi" maxOccurs="3" minOccurs="3"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedLong"&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -82,7 +82,7 @@ public class Dfhcommarea
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "CArrayPd", required = true)
     @CobolElement(cobolName = "C-ARRAY-PD", type = CobolType.PACKED_DECIMAL_ITEM, levelNumber = 5, isSigned = false, totalDigits = 7, fractionDigits = 2, minOccurs = 3, maxOccurs = 3, picture = "9(5)V99", usage = "PACKED-DECIMAL", srceLine = 23)
     protected List<BigDecimal> cArrayPd;
@@ -102,24 +102,27 @@ public class Dfhcommarea
     /**
      * Gets the value of the cArrayPd property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the cArrayPd property.
+     * This is why there is not a <CODE>set</CODE> method for the cArrayPd property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getCArrayPd().add(newItem);
+     * getCArrayPd().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link BigDecimal }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the cArrayPd property.
      */
     public List<BigDecimal> getCArrayPd() {
         if (cArrayPd == null) {
@@ -139,24 +142,27 @@ public class Dfhcommarea
     /**
      * Gets the value of the cArrayZd property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the cArrayZd property.
+     * This is why there is not a <CODE>set</CODE> method for the cArrayZd property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getCArrayZd().add(newItem);
+     * getCArrayZd().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link BigDecimal }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the cArrayZd property.
      */
     public List<BigDecimal> getCArrayZd() {
         if (cArrayZd == null) {
@@ -176,24 +182,27 @@ public class Dfhcommarea
     /**
      * Gets the value of the cArrayZi property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the cArrayZi property.
+     * This is why there is not a <CODE>set</CODE> method for the cArrayZi property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getCArrayZi().add(newItem);
+     * getCArrayZi().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Integer }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the cArrayZi property.
      */
     public List<Integer> getCArrayZi() {
         if (cArrayZi == null) {
@@ -213,24 +222,27 @@ public class Dfhcommarea
     /**
      * Gets the value of the cArrayBi property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the cArrayBi property.
+     * This is why there is not a <CODE>set</CODE> method for the cArrayBi property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getCArrayBi().add(newItem);
+     * getCArrayBi().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Long }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the cArrayBi property.
      */
     public List<Long> getCArrayBi() {
         if (cArrayBi == null) {
@@ -250,24 +262,27 @@ public class Dfhcommarea
     /**
      * Gets the value of the cArrayNi property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the cArrayNi property.
+     * This is why there is not a <CODE>set</CODE> method for the cArrayNi property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getCArrayNi().add(newItem);
+     * getCArrayNi().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link BigInteger }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the cArrayNi property.
      */
     public List<BigInteger> getCArrayNi() {
         if (cArrayNi == null) {

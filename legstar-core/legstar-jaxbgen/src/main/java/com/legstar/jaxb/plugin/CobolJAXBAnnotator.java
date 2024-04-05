@@ -19,7 +19,7 @@ import java.util.Map.Entry;
 
 import javax.xml.bind.annotation.XmlSchemaType;
 
-import org.apache.commons.lang.ArrayUtils;
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.w3c.dom.Element;
@@ -75,10 +75,10 @@ public class CobolJAXBAnnotator extends Plugin {
             + "generated code";
 
     private static final List < String > WINDOWS_RESERVED_FILE_NAMES = Arrays
-            .asList(new String[] { "CON", "PRN", "AUX", "NUL", "COM1", "COM2",
+            .asList("CON", "PRN", "AUX", "NUL", "COM1", "COM2",
                     "COM3", "COM4", "COM5", "COM6", "COM7", "COM8", "COM9",
                     "LPT1", "LPT2", "LPT3", "LPT4", "LPT5", "LPT6", "LPT7",
-                    "LPT8", "LPT9" });
+                    "LPT8", "LPT9" );
 
     private static final String RESERVED_FILE_NAME_SUFFIX = "w";
 

@@ -13,39 +13,39 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Dfhcommarea complex type.
+ * <p>Java class for Dfhcommarea complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Dfhcommarea">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="rq074Crud">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="3"/>
- *               &lt;enumeration value="UPD"/>
- *               &lt;enumeration value="INQ"/>
- *               &lt;enumeration value="CRE"/>
- *               &lt;enumeration value="DEL"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq074Bool">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort">
- *               &lt;totalDigits value="4"/>
- *               &lt;enumeration value="1"/>
- *               &lt;enumeration value="0"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Dfhcommarea"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="rq074Crud"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="3"/&gt;
+ *               &lt;enumeration value="UPD"/&gt;
+ *               &lt;enumeration value="INQ"/&gt;
+ *               &lt;enumeration value="CRE"/&gt;
+ *               &lt;enumeration value="DEL"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq074Bool"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort"&gt;
+ *               &lt;totalDigits value="4"/&gt;
+ *               &lt;enumeration value="1"/&gt;
+ *               &lt;enumeration value="0"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -59,7 +59,7 @@ public class Dfhcommarea
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(required = true)
     @CobolElement(cobolName = "RQ074-CRUD", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 5, picture = "X(03)", srceLine = 2)
     protected Dfhcommarea.Rq074Crud rq074Crud;
@@ -125,18 +125,17 @@ public class Dfhcommarea
 
 
     /**
-     * <p>Java class for null.
+     * <p>Java class for null</p>.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * <p>
+     * <p>The following schema fragment specifies the expected content contained within this class.</p>
      * <pre>
-     * &lt;simpleType>
-     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort">
-     *     &lt;totalDigits value="4"/>
-     *     &lt;enumeration value="1"/>
-     *     &lt;enumeration value="0"/>
-     *   &lt;/restriction>
-     * &lt;/simpleType>
+     * &lt;simpleType&gt;
+     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort"&gt;
+     *     &lt;totalDigits value="4"/&gt;
+     *     &lt;enumeration value="1"/&gt;
+     *     &lt;enumeration value="0"/&gt;
+     *   &lt;/restriction&gt;
+     * &lt;/simpleType&gt;
      * </pre>
      * 
      */
@@ -154,10 +153,26 @@ public class Dfhcommarea
             value = v;
         }
 
+        /**
+         * Gets the value associated to the enum constant.
+         * 
+         * @return
+         *     The value linked to the enum.
+         */
         public int value() {
             return value;
         }
 
+        /**
+         * Gets the enum associated to the value passed as parameter.
+         * 
+         * @param v
+         *     The value to get the enum from.
+         * @return
+         *     The enum which corresponds to the value, if it exists.
+         * @throws IllegalArgumentException
+         *     If no value matches in the enum declaration.
+         */
         public static Dfhcommarea.Rq074Bool fromValue(int v) {
             for (Dfhcommarea.Rq074Bool c: Dfhcommarea.Rq074Bool.values()) {
                 if (c.value == v) {
@@ -171,20 +186,19 @@ public class Dfhcommarea
 
 
     /**
-     * <p>Java class for null.
+     * <p>Java class for null</p>.
      * 
-     * <p>The following schema fragment specifies the expected content contained within this class.
-     * <p>
+     * <p>The following schema fragment specifies the expected content contained within this class.</p>
      * <pre>
-     * &lt;simpleType>
-     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
-     *     &lt;maxLength value="3"/>
-     *     &lt;enumeration value="UPD"/>
-     *     &lt;enumeration value="INQ"/>
-     *     &lt;enumeration value="CRE"/>
-     *     &lt;enumeration value="DEL"/>
-     *   &lt;/restriction>
-     * &lt;/simpleType>
+     * &lt;simpleType&gt;
+     *   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+     *     &lt;maxLength value="3"/&gt;
+     *     &lt;enumeration value="UPD"/&gt;
+     *     &lt;enumeration value="INQ"/&gt;
+     *     &lt;enumeration value="CRE"/&gt;
+     *     &lt;enumeration value="DEL"/&gt;
+     *   &lt;/restriction&gt;
+     * &lt;/simpleType&gt;
      * </pre>
      * 
      */
@@ -206,10 +220,26 @@ public class Dfhcommarea
             value = v;
         }
 
+        /**
+         * Gets the value associated to the enum constant.
+         * 
+         * @return
+         *     The value linked to the enum.
+         */
         public String value() {
             return value;
         }
 
+        /**
+         * Gets the enum associated to the value passed as parameter.
+         * 
+         * @param v
+         *     The value to get the enum from.
+         * @return
+         *     The enum which corresponds to the value, if it exists.
+         * @throws IllegalArgumentException
+         *     If no value matches in the enum declaration.
+         */
         public static Dfhcommarea.Rq074Crud fromValue(String v) {
             for (Dfhcommarea.Rq074Crud c: Dfhcommarea.Rq074Crud.values()) {
                 if (c.value.equals(v)) {

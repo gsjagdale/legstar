@@ -11,24 +11,24 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for LsItemsArray complex type.
+ * <p>Java class for LsItemsArray complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="LsItemsArray">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;choice>
- *           &lt;element name="LsFilesData" type="{http://legstar.com/test/coxb/dplarcht}LsFilesData"/>
- *           &lt;element name="LsProgramsData" type="{http://legstar.com/test/coxb/dplarcht}LsProgramsData"/>
- *           &lt;element name="LsTransactionsData" type="{http://legstar.com/test/coxb/dplarcht}LsTransactionsData"/>
- *         &lt;/choice>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="LsItemsArray"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;choice&gt;
+ *           &lt;element name="LsFilesData" type="{http://legstar.com/test/coxb/dplarcht}LsFilesData"/&gt;
+ *           &lt;element name="LsProgramsData" type="{http://legstar.com/test/coxb/dplarcht}LsProgramsData"/&gt;
+ *           &lt;element name="LsTransactionsData" type="{http://legstar.com/test/coxb/dplarcht}LsTransactionsData"/&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -43,7 +43,7 @@ public class LsItemsArray
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "LsFilesData")
     @CobolElement(cobolName = "LS-FILES-DATA", type = CobolType.GROUP_ITEM, levelNumber = 20, isRedefined = true, unmarshalChoiceStrategyClassName = "com.legstar.coxb.cust.dplarcht.ChoiceSelector", srceLine = 102)
     protected LsFilesData lsFilesData;

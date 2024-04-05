@@ -13,35 +13,35 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Dfhcommarea complex type.
+ * <p>Java class for Dfhcommarea complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Dfhcommarea">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="TableSimple" maxOccurs="2" minOccurs="2">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="3"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="TableComplex" type="{http://legstar.com/test/coxb/arrayssm}TableComplex" maxOccurs="3" minOccurs="3"/>
- *         &lt;element name="TableComplex2" type="{http://legstar.com/test/coxb/arrayssm}TableComplex2"/>
- *         &lt;element name="TableSimpleNumeric" maxOccurs="5" minOccurs="5">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort">
- *               &lt;totalDigits value="1"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Dfhcommarea"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="TableSimple" maxOccurs="2" minOccurs="2"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="3"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="TableComplex" type="{http://legstar.com/test/coxb/arrayssm}TableComplex" maxOccurs="3" minOccurs="3"/&gt;
+ *         &lt;element name="TableComplex2" type="{http://legstar.com/test/coxb/arrayssm}TableComplex2"/&gt;
+ *         &lt;element name="TableSimpleNumeric" maxOccurs="5" minOccurs="5"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}unsignedShort"&gt;
+ *               &lt;totalDigits value="1"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -57,7 +57,7 @@ public class Dfhcommarea
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "TableSimple", required = true)
     @CobolElement(cobolName = "TABLE-SIMPLE", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 5, minOccurs = 2, maxOccurs = 2, picture = "X(3)", srceLine = 32)
     protected List<String> tableSimple;
@@ -74,24 +74,27 @@ public class Dfhcommarea
     /**
      * Gets the value of the tableSimple property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the tableSimple property.
+     * This is why there is not a <CODE>set</CODE> method for the tableSimple property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getTableSimple().add(newItem);
+     * getTableSimple().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link String }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the tableSimple property.
      */
     public List<String> getTableSimple() {
         if (tableSimple == null) {
@@ -111,24 +114,27 @@ public class Dfhcommarea
     /**
      * Gets the value of the tableComplex property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the tableComplex property.
+     * This is why there is not a <CODE>set</CODE> method for the tableComplex property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getTableComplex().add(newItem);
+     * getTableComplex().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link TableComplex }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the tableComplex property.
      */
     public List<TableComplex> getTableComplex() {
         if (tableComplex == null) {
@@ -176,24 +182,27 @@ public class Dfhcommarea
     /**
      * Gets the value of the tableSimpleNumeric property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the tableSimpleNumeric property.
+     * This is why there is not a <CODE>set</CODE> method for the tableSimpleNumeric property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getTableSimpleNumeric().add(newItem);
+     * getTableSimpleNumeric().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link Integer }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the tableSimpleNumeric property.
      */
     public List<Integer> getTableSimpleNumeric() {
         if (tableSimpleNumeric == null) {

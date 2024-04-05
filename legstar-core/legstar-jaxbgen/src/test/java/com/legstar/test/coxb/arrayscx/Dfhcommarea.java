@@ -13,21 +13,21 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Dfhcommarea complex type.
+ * <p>Java class for Dfhcommarea complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Dfhcommarea">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="TableThree" type="{http://legstar.com/test/coxb/arrayscx}TableThree"/>
- *         &lt;element name="TableRedef" type="{http://legstar.com/test/coxb/arrayscx}TableRedef" maxOccurs="3" minOccurs="3"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Dfhcommarea"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="TableThree" type="{http://legstar.com/test/coxb/arrayscx}TableThree"/&gt;
+ *         &lt;element name="TableRedef" type="{http://legstar.com/test/coxb/arrayscx}TableRedef" maxOccurs="3" minOccurs="3"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -41,7 +41,7 @@ public class Dfhcommarea
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "TableThree", required = true)
     @CobolElement(cobolName = "TABLE-THREE", type = CobolType.GROUP_ITEM, levelNumber = 5, srceLine = 29)
     protected TableThree tableThree;
@@ -80,24 +80,27 @@ public class Dfhcommarea
     /**
      * Gets the value of the tableRedef property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the tableRedef property.
+     * This is why there is not a <CODE>set</CODE> method for the tableRedef property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getTableRedef().add(newItem);
+     * getTableRedef().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link TableRedef }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the tableRedef property.
      */
     public List<TableRedef> getTableRedef() {
         if (tableRedef == null) {

@@ -13,20 +13,20 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Dfhcommarea complex type.
+ * <p>Java class for Dfhcommarea complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Dfhcommarea">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="CArray" type="{http://legstar.com/test/coxb/fixarcom}CArray" maxOccurs="7" minOccurs="7"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Dfhcommarea"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="CArray" type="{http://legstar.com/test/coxb/fixarcom}CArray" maxOccurs="7" minOccurs="7"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -39,7 +39,7 @@ public class Dfhcommarea
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "CArray", required = true)
     @CobolElement(cobolName = "C-ARRAY", type = CobolType.GROUP_ITEM, levelNumber = 5, minOccurs = 7, maxOccurs = 7, srceLine = 23)
     protected List<CArray> cArray;
@@ -47,24 +47,27 @@ public class Dfhcommarea
     /**
      * Gets the value of the cArray property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
+     * <p>This accessor method returns a reference to the live list,
      * not a snapshot. Therefore any modification you make to the
      * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the cArray property.
+     * This is why there is not a <CODE>set</CODE> method for the cArray property.</p>
      * 
      * <p>
      * For example, to add a new item, do as follows:
+     * </p>
      * <pre>
-     *    getCArray().add(newItem);
+     * getCArray().add(newItem);
      * </pre>
      * 
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
      * {@link CArray }
+     * </p>
      * 
      * 
+     * @return
+     *     The value of the cArray property.
      */
     public List<CArray> getCArray() {
         if (cArray == null) {

@@ -11,21 +11,21 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Dfhcommarea complex type.
+ * <p>Java class for Dfhcommarea complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Dfhcommarea">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="QueryData" type="{http://legstar.com/test/coxb/lsfileaq}QueryData"/>
- *         &lt;element name="ReplyData" type="{http://legstar.com/test/coxb/lsfileaq}ReplyData"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Dfhcommarea"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="QueryData" type="{http://legstar.com/test/coxb/lsfileaq}QueryData"/&gt;
+ *         &lt;element name="ReplyData" type="{http://legstar.com/test/coxb/lsfileaq}ReplyData"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -39,7 +39,7 @@ public class Dfhcommarea
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "QueryData", required = true)
     @CobolElement(cobolName = "QUERY-DATA", type = CobolType.GROUP_ITEM, levelNumber = 5, srceLine = 36)
     protected QueryData queryData;

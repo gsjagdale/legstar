@@ -11,20 +11,20 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for queryJvmResponse complex type.
+ * <p>Java class for queryJvmResponse complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="queryJvmResponse">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="return" type="{http://jvmquery.ws.cases.test.xsdc.legstar.com/}jvmQueryReply" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="queryJvmResponse"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="return" type="{http://jvmquery.ws.cases.test.xsdc.legstar.com/}jvmQueryReply" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -37,7 +37,7 @@ public class QueryJvmResponse
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "return")
     @CobolElement(cobolName = "R-return", type = CobolType.GROUP_ITEM, levelNumber = 3)
     protected JvmQueryReply _return;

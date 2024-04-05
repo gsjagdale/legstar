@@ -11,21 +11,21 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for LsUnsignedPackedDecimal complex type.
+ * <p>Java class for LsUnsignedPackedDecimal complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="LsUnsignedPackedDecimal">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="LsCompat" type="{http://legstar.com/test/coxb/binpkdus}LsCompat"/>
- *         &lt;element name="LsExtend" type="{http://legstar.com/test/coxb/binpkdus}LsExtend"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="LsUnsignedPackedDecimal"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="LsCompat" type="{http://legstar.com/test/coxb/binpkdus}LsCompat"/&gt;
+ *         &lt;element name="LsExtend" type="{http://legstar.com/test/coxb/binpkdus}LsExtend"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -39,7 +39,7 @@ public class LsUnsignedPackedDecimal
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "LsCompat", required = true)
     @CobolElement(cobolName = "LS-COMPAT", type = CobolType.GROUP_ITEM, levelNumber = 10, srceLine = 57)
     protected LsCompat lsCompat;

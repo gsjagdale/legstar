@@ -3,8 +3,6 @@ package com.legstar.test.coxb.rq071;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -14,206 +12,206 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for RQ071Output complex type.
+ * <p>Java class for RQ071Output complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="RQ071Output">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="rq071__error__code">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="3"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__total__bal">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__cst__tp__cd">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="2"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__open__date">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="10"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__future__due">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__current__due">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__past__due__1">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__past__due__2">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__past__due__3">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__cr__amnt">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__total__bal__stmt">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__future__due__stmt">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__current__due__stmt">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__past__due__1__stmt">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__past__due__2__stmt">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__past__due__3__stmt">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__cr__amnt__stmt">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__check" type="{http://creditstatus.customer.ibg/}Eb017output_rq071__check" maxOccurs="15" minOccurs="15"/>
- *         &lt;element name="rq071__last__stmnt__date">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="10"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__ar__term__desc">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="40"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__amnt__due">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__curr__disc">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__avail__disc">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__due__date">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
- *               &lt;maxLength value="10"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *         &lt;element name="rq071__final__due__amnt">
- *           &lt;simpleType>
- *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal">
- *               &lt;minInclusive value="-99999999999.99"/>
- *               &lt;maxInclusive value="99999999999.99"/>
- *             &lt;/restriction>
- *           &lt;/simpleType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="RQ071Output"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="rq071__error__code"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="3"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__total__bal"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__cst__tp__cd"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="2"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__open__date"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="10"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__future__due"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__current__due"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__past__due__1"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__past__due__2"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__past__due__3"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__cr__amnt"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__total__bal__stmt"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__future__due__stmt"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__current__due__stmt"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__past__due__1__stmt"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__past__due__2__stmt"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__past__due__3__stmt"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__cr__amnt__stmt"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__check" type="{http://creditstatus.customer.ibg/}Eb017output_rq071__check" maxOccurs="15" minOccurs="15"/&gt;
+ *         &lt;element name="rq071__last__stmnt__date"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="10"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__ar__term__desc"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="40"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__amnt__due"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__curr__disc"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__avail__disc"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__due__date"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string"&gt;
+ *               &lt;maxLength value="10"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="rq071__final__due__amnt"&gt;
+ *           &lt;simpleType&gt;
+ *             &lt;restriction base="{http://www.w3.org/2001/XMLSchema}decimal"&gt;
+ *               &lt;minInclusive value="-99999999999.99"/&gt;
+ *               &lt;maxInclusive value="99999999999.99"/&gt;
+ *             &lt;/restriction&gt;
+ *           &lt;/simpleType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -250,7 +248,7 @@ public class RQ071Output
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(required = true)
     @CobolElement(cobolName = "rq071--error--code", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 3, picture = "X(3)", usage = "DISPLAY")
     protected String rq071__error__code;
@@ -304,7 +302,7 @@ public class RQ071Output
     protected BigDecimal rq071__cr__amnt__stmt;
     @XmlElement(required = true)
     @CobolElement(cobolName = "rq071--check", type = CobolType.GROUP_ITEM, levelNumber = 3, minOccurs = 15, maxOccurs = 15)
-    protected List<Eb017output_rq071__check> rq071__check;
+    protected Eb017output_rq071__check[] rq071__check;
     @XmlElement(required = true)
     @CobolElement(cobolName = "rq071--last--stmnt--date", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 3, picture = "X(10)", usage = "DISPLAY")
     protected String rq071__last__stmnt__date;
@@ -805,7 +803,6 @@ public class RQ071Output
 
     /**
      * 
-     * 
      * @return
      *     array of
      *     {@link Eb017output_rq071__check }
@@ -815,7 +812,9 @@ public class RQ071Output
         if (this.rq071__check == null) {
             return new Eb017output_rq071__check[ 0 ] ;
         }
-        return ((Eb017output_rq071__check[]) this.rq071__check.toArray(new Eb017output_rq071__check[this.rq071__check.size()] ));
+        Eb017output_rq071__check[] retVal = new Eb017output_rq071__check[this.rq071__check.length] ;
+        System.arraycopy(this.rq071__check, 0, retVal, 0, this.rq071__check.length);
+        return (retVal);
     }
 
     /**
@@ -830,14 +829,14 @@ public class RQ071Output
         if (this.rq071__check == null) {
             throw new IndexOutOfBoundsException();
         }
-        return this.rq071__check.get(idx);
+        return this.rq071__check[idx];
     }
 
     public int getRq071__checkLength() {
         if (this.rq071__check == null) {
             return  0;
         }
-        return this.rq071__check.size();
+        return this.rq071__check.length;
     }
 
     /**
@@ -849,18 +848,15 @@ public class RQ071Output
      *     
      */
     public void setRq071__check(Eb017output_rq071__check[] values) {
-        this._getRq071__check().clear();
+        if (values == null) {
+            this.rq071__check = null;
+            return ;
+        }
         int len = values.length;
+        this.rq071__check = ((Eb017output_rq071__check[]) new Eb017output_rq071__check[len] );
         for (int i = 0; (i<len); i ++) {
-            this.rq071__check.add(values[i]);
+            this.rq071__check[i] = values[i];
         }
-    }
-
-    protected List<Eb017output_rq071__check> _getRq071__check() {
-        if (rq071__check == null) {
-            rq071__check = new ArrayList<Eb017output_rq071__check>();
-        }
-        return rq071__check;
     }
 
     /**
@@ -872,11 +868,11 @@ public class RQ071Output
      *     
      */
     public Eb017output_rq071__check setRq071__check(int idx, Eb017output_rq071__check value) {
-        return this.rq071__check.set(idx, value);
+        return this.rq071__check[idx] = value;
     }
 
     public boolean isSetRq071__check() {
-        return ((this.rq071__check!= null)&&(!this.rq071__check.isEmpty()));
+        return ((this.rq071__check!= null)&&(this.rq071__check.length > 0));
     }
 
     public void unsetRq071__check() {

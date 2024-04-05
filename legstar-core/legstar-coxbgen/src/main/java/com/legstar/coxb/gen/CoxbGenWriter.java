@@ -319,8 +319,8 @@ public class CoxbGenWriter {
             throws CoxbGenException {
         try {
             Map < String, Object > parameters = createParameters(ce);
-            parameters.put("choice-strategy-type", strategyType);
-            parameters.put("choice-strategy-qualified-class-name",
+            parameters.put("choiceStrategyType", strategyType);
+            parameters.put("choiceStrategyQualifiedClassName",
                     strategyClassName);
 
             String dir = _coxbGenModel.getCoxbSrcDir().getAbsolutePath()
@@ -358,7 +358,7 @@ public class CoxbGenWriter {
         parameters.put("helper", _codeGenHelper);
         parameters.put("coxbContext", _coxbGenModel);
         parameters.put("coxbHelper", _coxbHelper);
-        parameters.put("binding-class-name",
+        parameters.put("bindingClassName",
                 _coxbHelper.getCoxbTypeName(binding));
         return parameters;
     }

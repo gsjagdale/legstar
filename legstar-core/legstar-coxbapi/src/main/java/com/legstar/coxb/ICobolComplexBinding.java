@@ -108,7 +108,7 @@ public interface ICobolComplexBinding extends ICobolBinding {
     /**
      * @deprecated
      * This is kept for backward compatibility but should not be used.
-     * Use {@link storeCounter(final ICobolNumericBinding counter)} instead which
+     * Use {@link #storeCounter(ICobolNumericBinding)} instead which
      * is strongly typed (counters must be numeric).
      * @param counter the counter to add to children list
      */

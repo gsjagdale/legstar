@@ -12,20 +12,20 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for Eb017output_rq071__check complex type.
+ * <p>Java class for Eb017output_rq071__check complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="Eb017output_rq071__check">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;group ref="{http://creditstatus.customer.ibg/}rq071output_rq071__check"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Eb017output_rq071__check"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;group ref="{http://creditstatus.customer.ibg/}rq071output_rq071__check"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -40,7 +40,7 @@ public class Eb017output_rq071__check
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(required = true)
     @CobolElement(cobolName = "rq071--check--date", type = CobolType.ALPHANUMERIC_ITEM, levelNumber = 5, picture = "X(10)", usage = "DISPLAY")
     protected String rq071__check__date;

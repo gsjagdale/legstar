@@ -12,7 +12,7 @@ package com.legstar.xsdc.test.cases.cultureinfo;
 
 import java.math.BigDecimal;
 
-import javax.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlType;
 
 /**
  * The request data object.

@@ -11,20 +11,20 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for SearchGrplst complex type.
+ * <p>Java class for SearchGrplst complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="SearchGrplst">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Payload" type="{http://legstar.com/test/coxb/varar021}Payload"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="SearchGrplst"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Payload" type="{http://legstar.com/test/coxb/varar021}Payload"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -37,7 +37,7 @@ public class SearchGrplst
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "Payload", required = true)
     @CobolElement(cobolName = "PAYLOAD", type = CobolType.GROUP_ITEM, levelNumber = 3, srceLine = 32)
     protected Payload payload;

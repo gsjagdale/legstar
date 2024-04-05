@@ -32,7 +32,7 @@ public class XmlUtilTest extends TestCase {
      */
     public void testDrainage() {
         StringReader reader = new StringReader(
-                "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
+                "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
                         + "<Dfhcommarea xmlns=\"http://legstar.com/test/coxb/lsfileae\">"
                         + "<ComNumber>100</ComNumber>" + "<ComPersonal>"
                         + "<ComName>TOTO</ComName>"
@@ -45,7 +45,6 @@ public class XmlUtilTest extends TestCase {
         String result = XmlUtil.prettyPrint(source);
         assertEquals(
                 "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-                        + LINE_SEPARATOR
                         + "<Dfhcommarea xmlns=\"http://legstar.com/test/coxb/lsfileae\">"
                         + LINE_SEPARATOR + "  <ComNumber>100</ComNumber>"
                         + LINE_SEPARATOR + "  <ComPersonal>" + LINE_SEPARATOR

@@ -11,22 +11,22 @@ import com.legstar.coxb.CobolType;
 
 
 /**
- * <p>Java class for LsUnsignedNative complex type.
+ * <p>Java class for LsUnsignedNative complex type</p>.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.</p>
  * 
  * <pre>
- * &lt;complexType name="LsUnsignedNative">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="LsHalfwords" type="{http://legstar.com/test/coxb/binnatsi}LsHalfwords"/>
- *         &lt;element name="LsFullwords" type="{http://legstar.com/test/coxb/binnatsi}LsFullwords"/>
- *         &lt;element name="LsDoublewords" type="{http://legstar.com/test/coxb/binnatsi}LsDoublewords"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="LsUnsignedNative"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="LsHalfwords" type="{http://legstar.com/test/coxb/binnatsi}LsHalfwords"/&gt;
+ *         &lt;element name="LsFullwords" type="{http://legstar.com/test/coxb/binnatsi}LsFullwords"/&gt;
+ *         &lt;element name="LsDoublewords" type="{http://legstar.com/test/coxb/binnatsi}LsDoublewords"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -41,7 +41,7 @@ public class LsUnsignedNative
     implements Serializable
 {
 
-    private final static long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
     @XmlElement(name = "LsHalfwords", required = true)
     @CobolElement(cobolName = "LS-HALFWORDS", type = CobolType.GROUP_ITEM, levelNumber = 10, srceLine = 73)
     protected LsHalfwords lsHalfwords;

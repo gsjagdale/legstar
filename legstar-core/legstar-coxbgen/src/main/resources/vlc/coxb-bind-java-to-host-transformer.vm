@@ -50,7 +50,7 @@ public class ${binding.jaxbName}JavaToHostTransformer extends AbstractJavaToHost
      * @throws CobolBindingException if binding cannot be returned
      */
     public ICobolComplexBinding newBinding() throws CobolBindingException {
-        return new ${binding-class-name}();
+        return new ${bindingClassName}();
     }
     
 }

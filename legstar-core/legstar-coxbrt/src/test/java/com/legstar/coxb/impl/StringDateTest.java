@@ -12,6 +12,7 @@ package com.legstar.coxb.impl;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.TimeZone;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -71,6 +72,7 @@ public class StringDateTest extends TestCase {
      */
     public void testHostToDate() throws Exception {
 
+        TimeZone.setDefault(TimeZone.getTimeZone("CET"));
         byte[] hostBytes = HostData
                 .toByteArray("f2f0f1f160f0f660f1f140f0f87af3f27af2f54bf3f0f3404040404040404040c1f1c1f2");
         CobolUnmarshalVisitor uv = new CobolUnmarshalVisitor(hostBytes, 0,

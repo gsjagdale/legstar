@@ -15,7 +15,7 @@ import java.io.Writer;
 import java.util.Arrays;
 
 import org.antlr.stringtemplate.AutoIndentWriter;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * Writes statements that fit into 72 columns.
